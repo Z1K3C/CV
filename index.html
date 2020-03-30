@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CV</title>
+  <title>Adbeel CV</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,8 +32,20 @@
     .style228{text-align: left; font-family: 'Sniglet'; font-style: normal; color: black; font-size: 14px; animation-duration: 2s;}
     .style240{animation-delay: 1s; font-size: 25px;}
     .style241{animation-delay: 1s;}
-    .progress{width: 105vh; background-color: rgb(200,200,200); height: 15px;}
+    .progress{width: 100%; background-color: rgb(200,200,200); height: 15px;}
     .progress-bar{background-color: rgb(52, 61,89);}
+    .modal-body {position:relative;padding:0px;height: inherit;}
+    .modal-dialog {max-width: 80%;margin: 30px auto;}
+    .close {
+      position:absolute;
+      right:-30px;
+      top:0;
+      z-index:999;
+      font-size:2rem;
+      font-weight: normal;
+      color:#fff;
+      opacity:1;
+    }
   </style>
 
 </head>
@@ -127,9 +139,9 @@
                 <section class="card bg-transparent border-0 pt-3 pl-3">
                   <div class="row mx-0 ">
                     <div class="col-12 style123 animated fadeIn">
-                      <a href="https://www.linkedin.com/in/adbeel-estrada-9a332b181"  target="_blank"> <i id="ICON_11" class="fab fa-linkedin-in px-4 style123" data-toggle="popover" title="Mi espacio en Linked in" data-placement="top" data-content="Zelda a Linked in"></i></a>
-                      <a href="https://www.facebook.com/Z1K3C"  target="_blank"> <i id="ICON_12" class="fab fa-facebook-square px-4 style123" data-toggle="popover" title="Mi Facebook" data-placement="top" data-content="Zelda a Facebook"></i></a>
-                      <a href="https://www.youtube.com/channel/UCKpR_x5WgtNCXx0oE2GuNag"  target="_blank"> <i id="ICON_13" class="fab fa-youtube px-4 style123" data-toggle="popover" title="Mi espacio en Youtube" data-placement="top" data-content="Zelda a Youtube"></i></a>
+                      <a href="https://www.linkedin.com/in/adbeel-estrada-9a332b181"  target="_blank"> <i id="ICON_11" class="fab fa-linkedin-in px-4 style123" data-toggle="popover" title="Mi espacio en Linked in" data-placement="top"></i></a>
+                      <a href="https://www.facebook.com/Z1K3C"  target="_blank"> <i id="ICON_12" class="fab fa-facebook-square px-4 style123" data-toggle="popover" title="Mi Facebook" data-placement="top"></i></a>
+                      <a href="https://www.youtube.com/channel/UCKpR_x5WgtNCXx0oE2GuNag"  target="_blank"> <i id="ICON_13" class="fab fa-youtube px-4 style123" data-toggle="popover" title="Mi espacio en Youtube" data-placement="top" ></i></a>
                     </div>
                   </div>
                 </section>
@@ -155,35 +167,67 @@
                 </section>
                 <section class="card py-2 border-0">
                   <div class="row mx-0 ">
-                    <div class="col-12 style228 pl-2 animated slideInUp"><a id="LINK_1" data-toggle="tooltip" data-placement="left" title="Video demostrativo programando un PLC" href="..." class="style228">  Programacion de PLC (Step 7 y Studio 5000)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp">
+                      <a id="LINK_1" data-toggle="tooltip" data-placement="left" title="Video demostrativo programando un PLC" data-src="https://www.youtube.com/embed/hDXVEBfyXkg" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_1">  
+                        Programacion de PLC (Step 7 y Studio 5000)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div>
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate"><a id="LINK_2" data-toggle="tooltip" data-placement="left" title="Video demostrativo de HMI" href="..." class="style228 " > Programacion de HMI Siemens (WinCC y TIA PORTAL)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate">
+                      <a id="LINK_2" data-toggle="tooltip" data-placement="left" title="Video demostrativo de HMI" data-src="https://www.youtube.com/embed/XXL5EG9jbl4" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_2"> 
+                      Programacion de HMI Siemens (WinCC y TIA PORTAL)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div>
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate"><a id="LINK_3" data-toggle="tooltip" data-placement="left" title="Video demostrativo usando SCOUT" href="..." class="style228">Parametrizacion de drives SINAMICS (Simotion Scout)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate">
+                      <a id="LINK_3" data-toggle="tooltip" data-placement="left" title="Video demostrativo usando SCOUT" data-src="https://www.youtube.com/embed/..." class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_3">
+                        Parametrizacion de drives SINAMICS (Simotion Scout)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">70%</div>
                     </div>                    
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate"><a id="LINK_4" data-toggle="tooltip" data-placement="left" title="Video demostrativo usando ACRONIS" href="..." class="style228">Administracion y mantenimiento de PCs (Acronis Backup N Recovery)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate">
+                      <a id="LINK_4" data-toggle="tooltip" data-placement="left" title="Video demostrativo usando ACRONIS" data-src="https://www.youtube.com/embed/..." class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_4">
+                        Administracion y mantenimiento de PCs (Acronis Backup N Recovery)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div> 
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2"><a id="LINK_5" data-toggle="tooltip" data-placement="left" title="Video demostrativo de un ensamble en Solidworks" href="..." class="style228">Diseño mecanico 3D (Solidworks)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2">
+                      <a id="LINK_5" data-toggle="tooltip" data-placement="left" title="Video demostrativo de un ensamble en Solidworks" data-src="https://www.youtube.com/embed/ziy2diwnfts" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_5">
+                        Diseño mecanico 3D (Solidworks)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 30%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">30%</div>
                     </div> 
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate"><a id="LINK_6" data-toggle="tooltip" data-placement="left" title="Video demostrativo editando un plano electrico en AutoCAD" href="..." class="style228">Implementacion de diagramas electricos (AutoCAD)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate">
+                      <a id="LINK_6" data-toggle="tooltip" data-placement="left" title="Video demostrativo editando un plano electrico en AutoCAD" data-src="https://www.youtube.com/embed/OwpprksvOoM" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_6">
+                        Implementacion de diagramas electricos (AutoCAD)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 30%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">30%</div>
                     </div> 
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2"><a id="LINK_7" data-toggle="tooltip" data-placement="left" title="video demostrativo creando una pagina web" href="..." class="style228">Diseño de paginas WEB (HTML/CSS/JS)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2">
+                      <a id="LINK_7" data-toggle="tooltip" data-placement="left" title="video demostrativo creando una pagina web" data-src="https://www.youtube.com/embed/B_5aO-7mczA" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_7">
+                        Diseño de paginas WEB (HTML/CSS/JS)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">40%</div>
                     </div> 
-                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate"><a id="LINK_8" data-toggle="tooltip" data-placement="left" title="Video demostratico creando una aplicacion de escritorio" href="..." class="style228">Diseño de aplicaciones de escritorio (Visual Basic)</a></div>
+                    <div class="col-12 style228 pl-2 animated slideInUp pt-2 text-truncate">
+                      <a id="LINK_8" data-toggle="tooltip" data-placement="left" title="Video demostratico creando una aplicacion de escritorio" data-src="https://www.youtube.com/embed/HNSwa8CNeJ8" class="style228 video-btn" href="#" data-toggle="modal"  data-target="#modal_8">
+                        Diseño de aplicaciones de escritorio (Visual Basic)
+                      </a>
+                    </div>
                     <div class="progress mx-2">
                       <div class="progress-bar " role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">40%</div>
                     </div> 
@@ -272,7 +316,7 @@
                 <div class="row mx-0">
                   <div class="col-12 card bg-transparent border-0 rounded-0" >
 
-                    <div class="row mx-0 align-items-center" style="height: 6vh; ">
+                    <div class="row mx-0 align-items-center" style="height: 7vh; ">
                   
                       <div class="col-lg-3 col-6  text-truncate font-weight-bold align-middle style240 animated  slideInUp" style="font-family: Roboto; font-size: 18px; text-align: start">
                         <i class="far fa-eye pr-2 "></i>   
@@ -336,7 +380,7 @@
                     </div>
  
                   </div>
-                  <div class="col-12 pt-4 px-0 style241 animated  slideInUp">
+                  <div class="col-12 pt-2 px-0 style241 animated  slideInUp">
                     
                     <div class="card bg-transparent border-0 rounded-0">
                       <div class="card-footer text-muted py-0 border-0 " style="text-align: center; font-family: ZCOOL QingKe HuangYou; font-style: normal">
@@ -361,6 +405,144 @@
 
       </div>
     </section>
+
+  <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_1"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_2"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_3"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_4"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="modal_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_5"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="modal fade" id="modal_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_6"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="modal fade" id="modal_7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_7"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+  <div class="modal fade" id="modal_8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video_8"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
 </body>
 
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -399,11 +581,33 @@
       $(this).tooltip('hide');
     });
 
+    $("#LINK_1").click(function(){
+      $('#modal_1').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_1').on('shown.bs.modal', function (e) {
+      $("#video_1").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_1').on('hide.bs.modal', function (e) {
+      $("#video_1").attr('src',$videoSrc); 
+    });
+
     $("#LINK_2").mouseenter(function(){
       $(this).tooltip('show');
     });
     $("#LINK_2").mouseleave(function(){
       $(this).tooltip('hide');
+    });
+
+    $("#LINK_2").click(function(){
+      $('#modal_2').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_2').on('shown.bs.modal', function (e) {
+      $("#video_2").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_2').on('hide.bs.modal', function (e) {
+      $("#video_2").attr('src',$videoSrc); 
     });
 
     $("#LINK_3").mouseenter(function(){
@@ -412,19 +616,51 @@
     $("#LINK_3").mouseleave(function(){
       $(this).tooltip('hide');
     });
-
+    /*
+    $("#LINK_3").click(function(){
+      $('#modal_3').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_3').on('shown.bs.modal', function (e) {
+      $("#video_3").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_3').on('hide.bs.modal', function (e) {
+      $("#video_3").attr('src',$videoSrc); 
+    });
+*/
     $("#LINK_4").mouseenter(function(){
       $(this).tooltip('show');
     });
     $("#LINK_4").mouseleave(function(){
       $(this).tooltip('hide');
     });
-
+    /*
+    $("#LINK_4").click(function(){
+      $('#modal_4').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_4').on('shown.bs.modal', function (e) {
+      $("#video_4").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_4').on('hide.bs.modal', function (e) {
+      $("#video_4").attr('src',$videoSrc); 
+    });
+*/
     $("#LINK_5").mouseenter(function(){
       $(this).tooltip('show');
     });
     $("#LINK_5").mouseleave(function(){
       $(this).tooltip('hide');
+    });
+    $("#LINK_5").click(function(){
+      $('#modal_5').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_5').on('shown.bs.modal', function (e) {
+      $("#video_5").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_5').on('hide.bs.modal', function (e) {
+      $("#video_5").attr('src',$videoSrc); 
     });
 
     $("#LINK_6").mouseenter(function(){
@@ -433,6 +669,16 @@
     $("#LINK_6").mouseleave(function(){
       $(this).tooltip('hide');
     });
+    $("#LINK_6").click(function(){
+      $('#modal_6').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_6').on('shown.bs.modal', function (e) {
+      $("#video_6").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_6').on('hide.bs.modal', function (e) {
+      $("#video_6").attr('src',$videoSrc); 
+    });
 
     $("#LINK_7").mouseenter(function(){
       $(this).tooltip('show');
@@ -440,12 +686,32 @@
     $("#LINK_7").mouseleave(function(){
       $(this).tooltip('hide');
     });
+    $("#LINK_7").click(function(){
+      $('#modal_7').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_7').on('shown.bs.modal', function (e) {
+      $("#video_7").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_7').on('hide.bs.modal', function (e) {
+      $("#video_7").attr('src',$videoSrc); 
+    });
 
     $("#LINK_8").mouseenter(function(){
       $(this).tooltip('show');
     });
     $("#LINK_8").mouseleave(function(){
       $(this).tooltip('hide');
+    });
+    $("#LINK_8").click(function(){
+      $('#modal_8').modal('show')
+      $videoSrc = $(this).data( "src" );
+    });
+    $('#modal_8').on('shown.bs.modal', function (e) {
+      $("#video_8").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    });
+    $('#modal_8').on('hide.bs.modal', function (e) {
+      $("#video_8").attr('src',$videoSrc); 
     });
 
     $("#ITEM_11").mouseenter(function(){
